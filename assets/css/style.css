@@ -1,0 +1,583 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Droid Sans', sans-serif;
+    /* background: #b6b6b6; */
+    color: #222;
+    line-height: 18px;
+    font-size: 16px;
+    background: url(https://csi.20icipp.com/img/static/hyyl/desktop/bg-cq9.png) bottom/auto no-repeat fixed, #101010 url(https://csi.20icipp.com/img/static/hyyl/desktop/bg-cq9.jpg) top/100% auto no-repeat;
+    overflow-x: hidden;
+}
+
+:root {
+    --main-color: #A18246;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* ------------------------Loader CSS------------------------------ */
+.loader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 999999;
+    background-color: rgba(0, 0, 0, 0.808);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ripple div {
+    position: absolute;
+    border: 4px solid #fff;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  .lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+  @keyframes lds-ripple {
+    0% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 72px;
+      height: 72px;
+      opacity: 0;
+    }
+  }
+  
+
+
+/* ------------------------Login Modal CSS------------------------------ */
+.modal-header.login-header{
+    background-color: var(--main-color);
+}
+.modal-header.login-header button span {
+    color: #FFF;
+}
+.login-input input:focus {
+    box-shadow: none;
+    border-color: var(--main-color);
+}
+.login-button.login {
+    padding: 0px 40px;
+    border-radius: 20px;
+    color: rgb(228, 228, 228);
+    background-color: var(--main-color);
+    transition: 0.5s;
+    border: none;
+}
+.login-button.login:hover {
+    background-color: #775d2a;
+}
+.login-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register-joinnow {
+    text-decoration: none !important;
+    color: var(--main-color) !important;
+    margin-left: 3px;
+}
+
+/* --------------------Header Navbar---------------------- */
+
+.header-container {
+    background-color: #000;
+    z-index: 99999;
+    position: relative;
+}
+
+.quick-nav {
+    background-color: transparent;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    z-index: 11;
+}
+
+.quick-nav .main-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.main-wrap {
+    margin: auto;
+    max-width: 1280px;
+    min-width: 1004px;
+    position: relative;
+    width: 100%;
+}
+
+.header-btn {
+    height: 40px;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header-btn .btn-big, .header-btn>input {
+    border-radius: 4px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .3);
+    height: 30px;
+    margin: 5px 3px;
+}
+
+.header-btn>input {
+    background-color: #efefef;
+    border: 0;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 13px;
+}
+
+.header-btn>input:focus {
+    outline: none;
+}
+
+.header-btn .btn-big {
+    background-color: #af8e4c;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    letter-spacing: .5px;
+    line-height: 30px;
+    min-width: 90px;
+    text-align: center;
+    transition: .2s;
+}
+
+.header-btn .btn-big:hover {
+    background-color: #96783B;
+}
+
+.header-btn .btn-big::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f023";
+    margin: 0 0 0 7px;
+}
+
+.header-btn .btn-big.signup::after {
+    content: "\f007";
+}
+
+.navbar {
+    padding: 0 326px;
+}
+
+.navbar a {
+    color: #FFF;
+}
+
+.dropdown-menu {
+    top: 52px;
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    padding: 0 387px !important;
+    margin: 0 !important;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.navbar-nav li {
+    border-bottom: 3px solid transparent;
+}
+
+.logo-size {
+    width: 82px;
+    margin-top: -41px;
+}
+
+.current {
+    border-bottom: 3px solid var(--main-color) !important;
+}
+
+.current a {
+    color: var(--main-color);
+}
+
+.navbar-nav .nav-item {
+    padding: 8px 15px;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.dropdown-category {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-category li {
+    display: inline-block;
+    height: 100%;
+    position: relative;
+}
+
+.dropdown-category li a {
+    display: block;
+    height: 100%;
+    padding: 30px 15px 0 15px;
+    position: relative;
+    transition: .3s;
+}
+
+.dropdown-category li a:hover {
+    background-color: #b9b9b979;
+}
+
+.dropdown-category li a img {
+    display: block;
+    position: relative;
+    height: 80%;
+}
+
+/* --------------------Banner Section---------------------- */
+
+.banner-container-padding {
+    padding: 0 75px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-slide-image {
+    cursor: pointer;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: rgb(228, 228, 228) !important;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 45px;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 45px;
+}
+
+/* --------------------Services Row---------------------- */
+
+.service-row-mt {
+    margin-top: 65px;
+}
+
+.services-card {
+    overflow: hidden;
+    transition: 0.2s;
+    position: relative;
+    height: 400px;
+}
+
+.services-card::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(180deg, #c3a466, #b1893d);
+    border-radius: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .5);
+    z-index: -1;
+    transition: 0.2s;
+}
+
+.services-image {
+    margin-top: -10px;
+    transition: 0.2s;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+    height: 430px;
+}
+
+.services-card:hover .services-image {
+    transform: scale(1.05);
+}
+
+.services-card:hover {
+    overflow: initial;
+    z-index: 1;
+}
+
+.services-card:hover::after {
+    left: 3%;
+    top: 10px;
+    width: 94%;
+}
+
+.services-card h2 {
+    background-color: rgba(0, 0, 0, .7);
+    box-sizing: border-box;
+    font-size: 22px;
+    line-height: 50px;
+    padding: 10px 15px;
+    text-shadow: 0 2px 5px rgba(145, 0, 25, .8);
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    color: #FFF;
+}
+
+.services-card h2::after {
+    background-color: #1b1b1b;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .7);
+    color: #8d99ae;
+    content: "\f034";
+    font-family: 'Font Awesome 5 Free';
+    font-size: 19px;
+    height: 50px;
+    line-height: 60px;
+    position: absolute;
+    right: 15px;
+    text-align: center;
+    transition: .3s;
+    width: 50px;
+    z-index: 1;
+}
+
+/* --------------------Footer---------------------- */
+
+.footer-main {
+    background-color: #1b1311;
+    border-top: 2px solid #af8e4c;
+    padding: 0;
+}
+
+.footer-padding {
+    padding: 50px 0 0 0;
+}
+
+.footer-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer-head-title {
+    color: #f1d772;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.footer-logo-box {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-left: 50px; */
+}
+
+.footer-logo-box div {
+    height: 50px;
+    margin-right: 20px;
+}
+
+/* footer logo shops */
+
+.AE_GAMING {
+    background: url(https://csi.20icipp.com/img/static/gplogo/egame/ae_gaming.png) 50%/100% no-repeat;
+    width: 106px;
+}
+
+.CARD365 {
+    background: url(https://csi.20icipp.com/img/static/gplogo/chess/365.png) 50%/auto 100% no-repeat;
+    width: 55px;
+}
+
+.CQ9 {
+    width: 68px;
+    background: url(https://csi.20icipp.com/img/static/desktop/footer-logos.png) no-repeat;
+}
+
+.DG {
+    background: url(https://csi.20icipp.com/img/static/game/zh-CN/DG/dg.png) 50%/90% auto no-repeat;
+    width: 70px;
+}
+
+.FC {
+    background: url(https://csi.20icipp.com/img/static/gplogo/egame/fc.png) 50%/100% auto no-repeat;
+    width: 48px;
+}
+
+.JDB {
+    background: url(https://csi.20icipp.com/img/static/desktop/footer-logos.png) no-repeat;
+    background-position: -2653px 0;
+    width: 83px;
+}
+
+.JILI {
+    background: url(https://csi.20icipp.com/img/static/gplogo/egame/jili.png) 50%/100% auto no-repeat;
+    width: 70px;
+}
+
+.KINGMAKER {
+    background: url(https://csi.20icipp.com/img/static/gplogo/chess/kingmaker.png) 50%/100% auto no-repeat;
+    width: 120px;
+}
+
+.PP {
+    background: url(https://csi.20icipp.com/img/static/gplogo/egame/pp.png) 50%/100% auto no-repeat;
+    width: 57px;
+}
+
+.SEXYBCRT {
+    background: url(https://csi.20icipp.com/img/static/gplogo/live/sexybcrt.png) 50%/100% auto no-repeat;
+    width: 106px;
+}
+
+.SKM {
+    background: url(https://csi.20icipp.com/img/static/desktop/footer-logos.png) no-repeat;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.UGAMING {
+    background-position: -2032px 0 !important;
+    width: 76px;
+    height: 50px;
+    margin-right: 20px;
+    background: url(https://csi.20icipp.com/img/static/desktop/footer-logos.png) no-repeat;
+}
+
+.VENUS {
+    background-position: -2128px 0 !important;
+    width: 54px;
+    height: 50px;
+    margin-right: 20px;
+    background: url(https://csi.20icipp.com/img/static/desktop/footer-logos.png) no-repeat;
+}
+
+.WM {
+    background: url(https://csi.20icipp.com/img/static/game/zh-CN/WM/wm.png) 50%/90% auto no-repeat;
+    width: 60px;
+}
+
+.YL {
+    background: url(https://csi.20icipp.com/img/static/yabo/mobile/gplogo/yl.png) 50%/100% auto no-repeat;
+    width: 55px;
+}
+
+.footer-aboutus ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.footer-aboutus ul li a {
+    padding: 0 15px;
+    color: rgb(204, 204, 204);
+}
+
+.footer-aboutus ul li a:first-child {
+    padding-left: 0;
+}
+
+footer {
+    background-color: #1b1311;
+    position: relative;
+    z-index: 9999;
+}
+
+.footer-copyright p {
+    color: rgb(121, 121, 121);
+    font-size: 80%;
+    text-align: center;
+    margin: 50px 0 10px 0;
+}
+
+
+/* ------------------Footer About Us Pages CSS ----------------------------- */
+.general-layout h1 {
+    color: #af8e4c;
+    font-size: 2em;
+    margin: 0 0 .67em 0;
+    font-weight: bolder;
+}
+.general-layout .cont {
+    color: #777;
+}
+.general-layout p {
+    margin: .25em 0;
+    line-height: 35px;
+}
+.general-layout .cont span {
+    color: var(--main-color);
+    font-size: 1.2em;
+    margin: 1em 0;
+    font-weight: 600;
+}

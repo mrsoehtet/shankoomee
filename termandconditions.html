@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ----------bootstrap version 4.6.0 ------------ -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Droid+Sans' type='text/css'>
+</head>
+
+<body>
+
+    <!-- ---------------Header Section---------------- -->
+    <header class="container-fluid header-container">
+        <div class="row">
+            <div class="col-12 p-0">
+                <!-- login place here -->
+                <div class="quick-nav">
+                    <div class="main-wrap main-header">
+                        <div class="header-btn">
+                            <button class="btn-big" data-toggle="modal" data-target="#loginModal">Login</button>
+                            <!-- login modal -->
+                            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header login-header">
+                                            <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="form-group login-input mb-4">
+                                                <input type="text" class="form-control" placeholder="Player ID">
+                                            </div>
+                                            <div class="form-group login-input mb-4">
+                                                <input type="password" class="form-control" placeholder="Password">
+                                            </div>
+                                            <div class="form-group login-input mb-2">
+                                                <div class="login-button-container">
+                                                    <button type="submit" class="login-button login">Login</button>
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <p class="mb-0 text-dark">
+                                                    Yet to register??
+                                                    <a href="register.html" class="register-joinnow">Join Now</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="register.html" class="btn-big signup text-decoration-none">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo/logo-main.png" alt="Logo" class="logo-size">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars toggler-bar"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Chess
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <ul class="dropdown-category">
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/chess/1.png" alt="banner-skm">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/chess/2.png" alt="banner-skm">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/chess/3.png" alt="banner-skm">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    E-Games
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <ul class="dropdown-category">
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/egame/1.png"
+                                                    alt="banner-egame">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/egame/2.png"
+                                                    alt="banner-egame">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/egame/3.png"
+                                                    alt="banner-egame">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Fising
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <ul class="dropdown-category">
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/fishing/1.png"
+                                                    alt="banner-fishing">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/fishing/2.png"
+                                                    alt="banner-fishing">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/fishing/3.png"
+                                                    alt="banner-fishing">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Sports
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <ul class="dropdown-category">
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/sport/1.png"
+                                                    alt="banenr-sport">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Live
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <ul class="dropdown-category">
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/live/1.png"
+                                                    alt="banenr-sport">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/live/2.png"
+                                                    alt="banenr-sport">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/live/3.png"
+                                                    alt="banenr-sport">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="promotion.html">
+                                    Promotion
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mobile.html">
+                                    Mobile
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- ---------------Page Section---------------- -->
+    <section class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card rounded-0">
+                    <div class="card-body p-5">
+                        <div class="general-layout">
+                            <h1>Terms and Conditions</h1>
+                            <div class="cont">
+                                <p>
+                                    <span>Terms and Conditions of Use of Services of Game</span>
+                                    <br>
+                                    <br>
+                                    <span>1. General</span>
+                                    <br>
+                                    <br>
+                                    1.1.
+                                    <br>
+                                    These Terms and Conditions govern the contractual relationship between the Player
+                                    (hereinafter referred to as the "User") and Game.
+                                    <br>
+                                    1.2.
+                                    <br>
+                                    The User agrees that by using or visiting any section of our website
+                                    https://www.9dgs.com or any other websites, owned by Game, via TV, pc, mobile
+                                    devices or any other communication mediums to access the gaming services including
+                                    downloadable applications (the "Website") and/or register on the website that they
+                                    consent to be bound by these Terms and Conditions and the (i) account registration
+                                    procedures (ii) all gaming and gaming transactions (iii) our Privacy Policy and (iv)
+                                    the Rules of the games (in aggregate hereinafter referred to "T&C").
+                                    <br>
+                                    1.3.
+                                    <br>
+                                    The User must read these T&C carefully in their entirety before clicking on the
+                                    "ACCEPT" button. If the User does not agree with any provision of these T&C the User
+                                    must not use or continue to use the Website.
+                                    <br>
+                                    1.4.
+                                    <br>
+                                    These T&C come into force as soon as the User clicks on the "ACCEPT" button. By
+                                    clicking "ACCEPT" the User signifies that he has read and understands the T&C and
+                                    agrees to be a party to the contractual relationship between the User and Game.
+                                    <br>
+                                    1.5.
+                                    <br>
+                                    Game reserve the right to edit, modify, supplement and to amend the T&C between
+                                    the User and Game at any time. Game will use all reasonable efforts to ensure
+                                    that the Users are notified of any change to the T&C. If the User does not accept
+                                    any changes made they should stop using the services and close their account. The
+                                    continued use of the website after the date which the changes come into effect shall
+                                    be deemed to be an acceptance of the changes by the User
+                                    <br>
+                                    1.6.
+                                    <br>
+                                    Game is regulated by Myanmar Gaming Authority.
+                                    <br>
+                                    1.7.
+                                    <br>
+                                    These T&C constitute a contractual and legally binding agreement between the User
+                                    and Game.
+                                    <br>
+                                    1.8.
+                                    <br>
+                                    In the case of any inconsistency between these Terms and Conditions and game
+                                    specific terms and conditions, it is the latter, which shall prevail. Where any
+                                    aspect of game specific terms and conditions is not covered but is provided for in
+                                    these Terms and Conditions, then it shall be deemed to apply to the relationship of
+                                    the player with Game.
+                                    <br>
+                                    1.9.
+                                    <br>
+                                    The User fully understands and agrees to be bound by these T&C as may be amended by
+                                    from time to time
+                                    <br>
+                                    1.10.
+                                    <br>
+                                    Such amendments will become effective immediately upon being posted on
+                                    https://www.9dgs.com. It is the User's sole responsibility to review the T&C,
+                                    together with the specific Rules for each Game the User choose to participate in, in
+                                    order to remain updated with all amendments each time the User plays. The User can
+                                    easily identify whether these T&C have changed by referring to the Version number
+                                    and the date of the current T&S stated on this page. Without prejudice to the
+                                    foregoing, the company shall however pre-notify the User prior to a substantial
+                                    amendment being made to the terms and conditions and in any such case the User shall
+                                    receive a summary of any change carried out.
+                                    <br>
+                                    1.11.
+                                    <br>
+                                    Rules and explanations for participating in any of Game's Games, maintaining the
+                                    User account with Game, Privacy Policy, and other important information is
+                                    provided in separate links on the Website and are incorporated into these T&C by
+                                    reference.
+                                    <br>
+                                    1.12.
+                                    <br>
+                                    Without prejudice to clause 1 above, any reference to Game's Games in this
+                                    agreement shall refer to Casino, Rush Poker, and other Games as may from time to
+                                    time become available on the Website. Game reserve the right to add and remove
+                                    Games from the Website at its own discretion.
+                                    <br>
+                                    1.13.
+                                    <br>
+                                    These T&C are published in a number of languages for information purposes and ease
+                                    of access by Users. It is only the English version that is the legal basis of the
+                                    relationship between the User and Game and in case of any discrepancy between a
+                                    non-English version and the English version of these T&C, the English version shall
+                                    prevail.
+                                    <br>
+                                    1.14.
+                                    <br>
+                                    If the User opens or attempt to open more than one account, for whatever reason,
+                                    Game may block or close any or all of the User's accounts at its discretion.
+                                    Should Game allow the User to maintain one account, it shall be the first created
+                                    account with Game, to which the User's remaining deposits, if any, will be
+                                    transferred. Game will deduct an administrative fee of 10% of the wallet balance
+                                    or USD 30 (Thirty USD), whichever is the higher amount at the time of the transfer,
+                                    for every account the User opened as well as any other deductions that may apply in
+                                    accordance with Game’s T&C.
+                                    <br>
+                                    1.15.
+                                    <br>
+                                    The operator of this website is Siamese CDs Inc. with registered address at Grand
+                                    Andaman Hotel and Casino, Thahtay Khyun Island, Myanmar.
+                                    <br>
+                                    <br>
+                                    <span>2. The User Member Account</span>
+                                    <br>
+                                    <br>
+                                    2.1.
+                                    <br>
+                                    Registration and opening of the User member account:
+                                    <br>
+                                    2.1.1.
+                                    <br>
+                                    In order to participate in any of Game's Games for real money, the applicant must
+                                    be 18 years of age to register an account with Game (“Member Account”) and place
+                                    money into the Member Account in the way stipulated on the following page: page:
+                                    sign-up.
+                                    <br>
+                                    2.1.2.
+                                    <br>
+                                    Residents of the United States, Singapore, Philippines and HongKong are not allowed
+                                    to open an account with Game.
+                                    <br>
+                                    Game regularly screens its registrations for anomalies and will immediately and
+                                    indefinitely suspend any of these countries’ player accounts.
+                                    <br>
+                                    It is the User's responsibility to determine the legal status of internet gambling
+                                    in the User's jurisdiction and act accordingly. The availability of the Game
+                                    Website in any particular jurisdiction does not constitute an offer or invitation by
+                                    Game to use the services offered by the Game Website. Game will accept no
+                                    liability whatsoever with respect to actions by players where Internet gambling is
+                                    illegal and/or which is in violation of this article of the Terms and Conditions.
+                                    <br>
+                                    2.1.3.
+                                    <br>
+                                    Game reserves the right to appoint Payment Solution Providers to act, receive
+                                    and/or pay funds on behalf of Game.
+                                    <br>
+                                    2.1.4.
+                                    <br>
+                                    Users cannot gamble, wager and place bets within the Myanmar Territory as mentioned
+                                    on our gaming license.
+                                    <br>
+                                    2.1.5.
+                                    <br>
+                                    The User is allowed to have only one Member Account on this Website. If the User
+                                    attempts to open more than one Member Account, all accounts the User tried to open
+                                    may be blocked or closed.
+                                    <br>
+                                    2.1.6.
+                                    <br>
+                                    If the User notices that he has more than one Member Account under different names,
+                                    the User shall notify Game immediately.
+                                    <br>
+                                    2.1.7.
+                                    <br>
+                                    A request to open a Member Account is made by completing the registration form and
+                                    submitting it to Game online. Game reserve the right to refuse to open a
+                                    Member Account
+                                    <br>
+                                    2.1.8.
+                                    <br>
+                                    All information supplied when registered MUST be accurate. The User must enter all
+                                    mandatory information requested into the User's registration form, in particular,
+                                    the User's identity, the User's address and contact details, including a valid
+                                    e-mail address, the User's place of residence, relevant payment information, all of
+                                    which must be true and correct. It is the User's sole responsibility to insure that
+                                    the information provided is true, complete and correct. Users are hereby notified
+                                    that Game carries out verification procedures, whether itself or through third
+                                    parties on User's depositing money. The User may be requested to provide Game
+                                    with additional documents, such as a copy of the passport, to verify his identity.
+                                    The User's Member Account may be blocked or closed if the User does not provide the
+                                    requested information or documents or if such information or documents the User
+                                    supplies is/are found to be false or misleading.
+                                    <br>
+                                    2.1.9.
+                                    <br>
+                                    As part of the registration process the User must choose a username and password to
+                                    be able to login into the Website. It is the User's sole and exclusive
+                                    responsibility to ensure that the User's login details are kept securely. The User
+                                    shall not disclose his login details to anyone. Game is not responsible for any
+                                    abuse or misuse of the User's Member Account by third parties due to the User's
+                                    disclosure, whether intentional or accidental, whether active or passive, of his
+                                    login details to any third party.
+                                    <br>
+                                    2.1.0.
+                                    <br>
+                                    The User is not allowed to transfer funds from the User's Member Account to other
+                                    Users or to receive money from other Users into the User's Member Account.
+                                    <br>
+                                    2.1.11.
+                                    <br>
+                                    Selling / transferring and/or acquiring of accounts to / from other Users is always
+                                    prohibited.
+                                    <br>
+                                    2.2.
+                                    <br>
+                                    Deposits into the User's Member Account
+                                    <br>
+                                    2.2.1.
+                                    <br>
+                                    The User may only participate in any Game if the User has sufficient funds in the
+                                    User's Member Account. Game never gives the User any credit whatsoever for
+                                    participation in any Game.
+                                    <br>
+                                    2.2.2.
+                                    <br>
+                                    All information required to deposit funds into the User's Member Account, can be
+                                    found under “My Account” and “Deposit” pages of the Website. The User can use any of
+                                    the methods available to him as specified in these pages as may be amended from time
+                                    to time. Please note that some of the methods may not be available in some
+                                    countries.
+                                    <br>
+                                    2.2.3.
+                                    <br>
+                                    Depending on the method selected, deposits may incur charges. For current fees
+                                    regarding depositing funds, see "My Account" and "Deposits" for each deposit method.
+                                    The User's bank may independently charge the User for bank wire transfers and other
+                                    methods of payment.
+                                    <br>
+                                    2.2.4.
+                                    <br>
+                                    Game accept payments in multiple currencies. The User must choose one currency as
+                                    the currency of the User's Member Account. Any payments received by Game in a
+                                    currency other than the one chosen by the User will be converted into the currency
+                                    chosen at the prevailing exchange rate. Any exchange premiums are to be paid by the
+                                    User.
+                                    <br>
+                                    2.2.5.
+                                    <br>
+                                    When using a credit or debit card for depositing funds, the User's funds are
+                                    credited when Game receive an approval and authorization code from the card's
+                                    issuing bank. Should Game not receive such approval and authorization code the
+                                    User's account will not be credited with those funds.
+                                    <br>
+                                    2.2.6.
+                                    <br>
+                                    Game reserve the right to use additional procedures and means to verify the
+                                    User's identity when effecting deposits into the User's Member Account.
+                                    <br>
+                                    2.2.7.
+                                    <br>
+                                    Game do not grant any credit for the use of its services.
+                                    <br>
+                                    2.2.8.
+                                    <br>
+                                    Credit balances in the User's Member Account will not bear interest.
+                                    <br>
+                                    2.3.
+                                    <br>
+                                    Account Administration.
+                                    <br>
+                                    2.3.1
+                                    <br>
+                                    Game operates the User's Member Account, calculating the amount of money the User
+                                    has staked or offered to stake on a bet, which represents the User's potential
+                                    exposure at any time (“Reserved Amount”) and calculating the User's "Available to
+                                    Bet" balance, from time to time, as well as settling bets made by the User with
+                                    other User’s through the User’s participation in the Games.
+                                    <br>
+                                    2.3.2
+                                    <br>
+                                    The amount of money in the User's Member Account which has not yet been staked on a
+                                    matched bet is the User's "Available to Bet" balance and will determine the User's
+                                    betting limit.
+                                    <br>
+                                    2.3.3
+                                    <br>
+                                    Game´s calculations of the User's “Reserved Amount”, “Available to Bet” balance
+                                    and amounts owed by the User under the terms of this agreement will be final and, in
+                                    the absence of any manifest error, will not be subject to any enquiry or
+                                    investigation.
+                                    <br>
+                                    2.3.4
+                                    <br>
+                                    Game is allowed to set off any losses against any gains.
+                                    <br>
+                                    2.3.5
+                                    <br>
+                                    Any deposit made by the User into the User's Member Account will be held for the
+                                    User's use until the User places a bid for a bet, or accepts a bet on the Website.
+                                    Game then hold the amount staked awaiting the outcome of the Bet.
+                                    <br>
+                                    2.3.6
+                                    <br>
+                                    When the User has placed a bet on Game's website, Game will hold the amount
+                                    staked awaiting the outcome of the Game, and declare a winner. At this point the bet
+                                    is binding and cannot be cancelled nor can any amount held by Game as a
+                                    stakeholder be withdrawn.
+                                    <br>
+                                    2.4.
+                                    <br>
+                                    Payouts
+                                    <br>
+                                    2.4.1.
+                                    <br>
+                                    When the outcome of a Game the User participates in becomes determined or where
+                                    Game has confirmed the relevant result of an event and settled the markets, all
+                                    winnings will be held for the use of the User's Member Account.
+                                    <br>
+                                    2.4.2.
+                                    <br>
+                                    If Game mistakenly credits the User's Member Account with winnings that do not
+                                    belong to the User, whether due to a technical or human error or otherwise, the
+                                    amount will remain property of Game and the amount will be transferred from the
+                                    User's Member Account. If prior to Game becoming aware of the error the User has
+                                    withdrawn the funds that do not belong to him, without prejudice to other remedies
+                                    and actions that may be available at law, the mistakenly paid amount will constitute
+                                    a debt owed by the User to Game. In the event of an incorrect crediting, the User
+                                    is obliged to notify Game immediately by email.
+                                    <br>
+                                    2.4.3.
+                                    <br>
+                                    Game will carry out additional verification procedures for any payout exceeding
+                                    the equivalent of USD2,500. Nonetheless, Game reserve the right to carry out any
+                                    such verification procedures in case of a lower payout to the User.
+                                    <br>
+                                    2.5.
+                                    <br>
+                                    Withdrawals from the User's Member Account
+                                    <br>
+                                    2.5.1.
+                                    <br>
+                                    The User may withdraw any amount up to the “Available to Bet” balance in the User's
+                                    Member Account by issuing Game with a valid notice of withdrawal on the Website.
+                                    <br>
+                                    2.5.2.
+                                    <br>
+                                    To free the User's Member Account balance and withdraw all the User's funds, the
+                                    User must first cancel any stakes that he may have made that remain outstanding.
+                                    <br>
+                                    2.5.3.
+                                    <br>
+                                    Notices for withdrawals must be made via the Website. Game will not accept
+                                    withdrawal demands made by telephone or by electronic mail. Employees of Game are
+                                    not permitted to bypass these instructions.
+                                    <br>
+                                    2.5.4.
+                                    <br>
+                                    For the User's protection, in any twenty-four hour period, the User may only
+                                    withdraw the maximum amount of USD 5,000 unless a larger amount has been agreed by
+                                    prior arrangement.
+                                    <br>
+                                    2.5.5.
+                                    <br>
+                                    Game offer a wide range of withdrawal methods. Withdrawals can incur charges
+                                    depending on the selected method. Any winnings above the amount stated in 2.5.4 can
+                                    be withdrawn through the method chosen by the User for deposit. Information on the
+                                    current fees for withdrawals is found on "My Account" and by clicking on
+                                    "Withdrawals". In addition, the User's own bank may add a further handling charge.
+                                    These charges may vary over time.
+                                    <br>
+                                    2.5.6.
+                                    <br>
+                                    Game reserve the right to credit the User back using the same method as that used
+                                    by the User when depositing.
+                                    <br>
+                                    2.5.7.
+                                    <br>
+                                    Game reserve the right to request identification documents for all withdrawals.
+                                    <br>
+                                    2.5.8.
+                                    <br>
+                                    Upon requesting a withdrawal of winnings exceeding USD100,000, Game reserves the
+                                    right to payout the requested amount incrementally over 10 consecutive months, with
+                                    one payout each calendar month.
+                                    <br>
+                                    2.5.9
+                                    <br>
+                                    In the interests of fair gaming, the User's play will be reviewed before withdrawals
+                                    are processed for any irregular or unusual playing patterns including but not
+                                    limited to, equal, zero or low margin bets or hedge betting for play-through
+                                    requirement purposes. Should Game deem that irregular game play has occurred,
+                                    Game reserve the right to withhold any withdrawals and/or confiscate all winnings
+                                    and bonuses.
+                                    <br>
+                                    2.5.10.
+                                    <br>
+                                    For Cash deposits and winnings, user needs to wager 1 time before requesting for
+                                    withdrawal. Should User choose to do this, User may only withdraw the amount that he
+                                    deposited, which may or may not have triggered a bonus award, under the terms that
+                                    the entire bonus sum remains on account or may be withdrawn by Game. For example:
+                                    User deposits USD20 and Game offer a USD20 as a deposit bonus. There is then
+                                    USD40 in User's account. Before meeting the wagering requirements (which usually are
+                                    40 times the bonus amount) Users may wish to withdraw their deposited amount
+                                    (USD20). Game will then retract the bonus and any winnings or losses before the
+                                    withdrawal can be approved. If User has already gambled part of the total balance on
+                                    the account, User can only request a withdrawal of the remaining amount after the
+                                    bonus sum has been returned to Game. Game reserves the right to refuse or void
+                                    any bonus offered to any User for reasons including but not restricted to, abuse by
+                                    the User.
+                                    <br>
+                                    2.5.11.
+                                    <br>
+                                    It is a precondition for the processing of withdrawals which cumulatively exceed USD
+                                    2,500 that User provides Game with a copy of User's valid passport or official
+                                    identity card (confirming identity and age) and a recent utility bill in the User's
+                                    name and dated less than 3 months old (confirming place of residence). In the case
+                                    of deposits via credit card, User may be requested to submit a copy of the front and
+                                    back of the used credit card showing only the first six and last four digits on the
+                                    front, and hiding the CVV2 number from the back.
+                                    <br>
+                                    2.5.12.
+                                    <br>
+                                    Game additionally reserves to right to request the documents discussed in 2.5.11
+                                    above for any account holder who has requested a withdrawal of any amount below USD
+                                    2,500.
+                                    <br>
+                                    2.5.13.
+                                    <br>
+                                    Withdrawals to credit / debit card are not possible to Visa or Visa electron and
+                                    Mastercard.
+                                    <br>
+                                    2.5.14.
+                                    <br>
+                                    In line with the applicable laws, Game will remit amounts only to the same
+                                    account from where the funds paid into User's account originated.
+                                    <br>
+                                    2.5.15.
+                                    <br>
+                                    The minimum payout amount is USD10. For payouts under USD50.00 (fifty USD) Game
+                                    reserves the right to charge a transaction fees.
+                                    <br>
+                                    2.5.16.
+                                    <br>
+                                    Game reserve the right to restrict payouts to USD10,000 per week.
+                                    <br>
+                                    2.6
+                                    <br>
+                                    Closing the User's Member Account
+                                    <br>
+                                    2.6.1
+                                    <br>
+                                    The User may close his account at any time and Game will return to the User all
+                                    funds from the User's Member Account subject to the deduction of the relevant
+                                    withdrawal charges. To close the User's Member Account, the User must first cancel
+                                    any offers for stakes that the User has made that remain outstanding.
+                                    <br>
+                                    2.6.2
+                                    <br>
+                                    The method of repayment will be at Game's absolute discretion.
+                                    <br>
+                                    2.6.3
+                                    <br>
+                                    Game reserves the right to close the User's Member Account and to refund to the
+                                    User the "Available to Bet" balance, subject to the deduction of any relevant
+                                    withdrawal charges, at Game's absolute discretion and without any obligation to
+                                    state a reason or give prior notice.
+                                    <br>
+                                    2.6.4
+                                    <br>
+                                    If the User does not log onto his Member Account via the internet, using his "User
+                                    Name" and "Password" for a period of one (1) year, all balances may be removed from
+                                    the User's account after a notification has been sent to the registered e-mail
+                                    address.
+                                    <br>
+                                    2.6.5
+                                    <br>
+                                    Game reserves the right to withhold and remove any bonuses awarded to the User if
+                                    such bonuses have not been used within 6 month from the date when they were awarded.
+                                    <br>
+                                    2.6.6
+                                    <br>
+                                    Should a User use bonus funds to play on Games not included in Games that count
+                                    towards meeting the bonus requirement, Game reserves the right to refuse
+                                    withdrawals, remove bonus money and remove winnings without notice. Game are
+                                    entitled to lock all accounts of players found abusing this rule.
+                                    <br>
+                                    <br>
+                                    <span>3. The User's obligations as a player</span>
+                                    <br>
+                                    <br>
+                                    3.1.
+                                    <br>
+                                    The User hereby declares and warrants that:
+                                    <br>
+                                    3.1.1.
+                                    <br>
+                                    The User is eighteen (18) years of age or such higher minimum legal age of majority
+                                    as stipulated in the laws of jurisdiction applicable to the User. The User shall not
+                                    be prohibited from participating in the Games offered on the Website by any
+                                    statutory rule of his jurisdiction;
+                                    <br>
+                                    3.1.2.
+                                    <br>
+                                    The User confirms that he will use this Website and the Member Account solely and
+                                    exclusively for the purpose of the User's genuine participation in the Games and not
+                                    for any financial or other operations. The User's participation in the Games will be
+                                    strictly in the User's personal non-professional capacity and used for recreational
+                                    and entertainment reasons only;
+                                    <br>
+                                    3.1.3.
+                                    <br>
+                                    The User is to participate in the Games on his own behalf and not on behalf of any
+                                    other person;
+                                    <br>
+                                    3.1.4.
+                                    <br>
+                                    The User confirms that he is not resident in the Philippines, Hong Kong, Singapore
+                                    or the United States.
+                                    <br>
+                                    3.1.5.
+                                    <br>
+                                    All information that the User provides to Game during the term of validity of
+                                    this agreement is true, complete, and correct, and the User shall immediately notify
+                                    Game of any change of such information;
+                                    <br>
+                                    3.1.6.
+                                    <br>
+                                    The User is solely responsible for reporting and accounting for any gaming taxes
+                                    applicable to him and payable to the applicable regulatory authority under relevant
+                                    laws for any winnings that the User receives from Game;
+                                    <br>
+                                    3.1.7.
+                                    <br>
+                                    The user confirms that all funds that the User deposits into the Member Account are
+                                    not tainted with any illegality and, in particular, do not originate from any
+                                    illegal activity or source;
+                                    <br>
+                                    3.1.8.
+                                    <br>
+                                    The User understands that by participating in the Games the User takes the risk of
+                                    losing money deposited into the Member Account;
+                                    <br>
+                                    3.1.9.
+                                    <br>
+                                    The User shall not be involved in any fraudulent, collusive, fixing or other
+                                    unlawful activity in relation to the User's or third parties’ participation in any
+                                    of the Games and shall not use any software-assisted methods or techniques or
+                                    hardware devices for the User's participation in any of the Games. Game hereby
+                                    reserves the right to invalidate or close the Member Account or invalidate the
+                                    User's participation in a Game in the event of such behaviour;
+                                    <br>
+                                    3.1.10.
+                                    <br>
+                                    In relation to deposits and withdrawals of funds into and from the User's Member
+                                    Account, the User shall only use credit cards and other financial instruments that
+                                    are valid and lawfully belong to him.
+                                    <br>
+                                    3.1.11.
+                                    <br>
+                                    The computer software that Game make available to the User is the property of
+                                    Game or any other third parties or partners of Game and is protected by
+                                    copyright and other applicable intellectual property laws. The User may only use the
+                                    software for the User's own personal, recreational uses in accordance with all
+                                    rules, terms and conditions hereby established and in accordance with all applicable
+                                    laws, rules and regulations.
+                                    <br>
+                                    3.1.12.
+                                    <br>
+                                    Games played on Website should be played in the same manner as games played in any
+                                    other setting. The User shall be courteous to other Users and shall avoid rude or
+                                    obscene comments, including but not limited to chat rooms.
+                                    <br>
+                                    3.2.
+                                    <br>
+                                    Inactive and Dormant Accounts
+                                    <br>
+                                    3.2.1.
+                                    <br>
+                                    If no transaction has been recorded on User's account for twelve months the Member
+                                    Account shall be deemed to be inactive. In such a case, after sending appropriate
+                                    notification to the player on the 11th month, Game will deduct USD5.00 per month
+                                    administrative fee from the User's account. If, after Game have begun charging
+                                    User's account with the Administrative Fee, and before User's account becomes
+                                    dormant, User starts playing on Users account, Game will refund to Users account
+                                    the administrative fees charged. In order to obtain a refund of administrative fees
+                                    the User is expected to play and wager funds on the account and not solely by
+                                    logging in. In such a case the User is requested to contact customer support. In the
+                                    case where the user account is inactive for 30 months, therefore a log on has not
+                                    been performed within the last 30 months, Game shall close User's account.
+                                    <br>
+                                    <br>
+                                    <span>4. Responsible gaming</span>
+                                    <br>
+                                    <br>
+                                    4.1
+                                    <br>
+                                    You may at your discretion choose to exclude yourself from playing any Games on our
+                                    Website. You may: • Set a limit on the amount you may wager within a specified
+                                    period of time. • Set a limit on the losses you may incur within a period of time; •
+                                    Set a limit on the amount of time you may play within one session; • Exclude
+                                    yourself from playing for a definite or indefinite period.
+                                    <br>
+                                    4.2
+                                    <br>
+                                    In order to impose limits on your gaming you need to send an email to your local
+                                    customer service at the address provided on https://www.9dgs.com indicating the
+                                    following particulars "I want to be excluded from https://www.9dgs.com", or
+                                    alternatively visit https://www.9dgs.com and click on "Responsible Gaming". A
+                                    self-exclusion will take immediate effect following the receipt of your request by a
+                                    customer service representative.
+                                    <br>
+                                    4.3
+                                    <br>
+                                    If you choose to exclude yourself for an indefinite period your account will be
+                                    closed and you will be barred from re-registering on our Website .
+                                    <br>
+                                    4.4
+                                    <br>
+                                    When setting up your Member Account you may also choose to impose limits on your
+                                    play. This means that you can only deposit and play with the amount you have pre-set
+                                    for the next seven-day-period. You are not able to raise your limit during a running
+                                    week, but are able to raise the maximum stake for the following week.
+                                    <br>
+                                    4.5.
+                                    <br>
+                                    Should you opt for self-exclusion in the manners contemplated above, then you will
+                                    not be able to reverse this position for at least 7 days, after which you will be
+                                    able to send an email to the same email address in order to re-activate your access
+                                    to our Games and re-activate your Member Account.
+                                    <br>
+                                    <br>
+                                    <span>5. Game Rewards Program</span>
+                                    <br>
+                                    <br>
+                                    5.1.
+                                    <br>
+                                    Game reserves the right to modify the terms and conditions of Game's Reward
+                                    Program at any time and without prior notice. If Game suspects that You are
+                                    engaged in illegal or fraudulent activities when using the Game Rewards Program
+                                    or in breach with Game's Terms and Conditions, Game may freeze or terminate
+                                    Your Member Account and/or a related account (e.g. a referred friend) at Game's
+                                    absolute discretion.
+                                    <br>
+                                    5.2.
+                                    <br>
+                                    You will be automatically registered on the Rewards Program when you register an
+                                    account on Game.
+                                    <br>
+                                    5.3.
+                                    <br>
+                                    To collect coins on the site, you must be logged into your account.
+                                    <br>
+                                    5.4.
+                                    <br>
+                                    You will be awarded with coins for being active on Game.
+                                    <br>
+                                    5.5.
+                                    <br>
+                                    All necessary information regarding the number of coins earned and available to the
+                                    player is visible on the player's 'My Account' page.
+                                    <br>
+                                    5.6.
+                                    <br>
+                                    The amount of coins awarded for specific activities are listed on the site.
+                                    <br>
+                                    5.7.
+                                    <br>
+                                    Coins can be redeemed at the Game shop only.
+                                    <br>
+                                    5.8.
+                                    <br>
+                                    Coins cannot be transferred to other players.
+                                    <br>
+                                    5.9.
+                                    <br>
+                                    Coin amount is recorded and updated in real-time.
+                                    <br>
+                                    5.10.
+                                    <br>
+                                    Earned level of membership is effective and updated immediately.
+                                    <br>
+                                    5.11.
+                                    <br>
+                                    To advance past Level 1 in the Rewards Program, a player is required to have made a
+                                    monetary deposit. All level progression will be stopped on all levels until a player
+                                    has made a monetary deposit.
+                                    <br>
+                                    5.12
+                                    <br>
+                                    Certain shop offers are only available to players who have reached a specific
+                                    program level.
+                                    <br>
+                                    5.13.
+                                    <br>
+                                    Game reserves the right to permanently disable or suspend a player's Reward
+                                    Program in the event of fraud or attempted fraud by the player.
+                                    <br>
+                                    5.14.
+                                    <br>
+                                    Casino bandits may confiscate your coins if you fail to use them.
+                                    <br>
+                                    <br>
+                                    <span>6. Special rules</span>
+                                    <br>
+                                    <br>
+                                    6.1
+                                    <br>
+                                    Certain provisions laid down in this section refer to the rules, terms and
+                                    contractual provisions for specific games, which are found in a separate link from
+                                    this page. The rules linked to this page form an integral part of these Terms and
+                                    Conditions and the User shall be deemed to have accepted the special rules upon
+                                    clicking the 'ACCEPT' button on this page.
+                                    <br>
+                                    <br>
+                                    <span>7. Privacy policy</span>
+                                    <br>
+                                    <br>
+                                    7.1.
+                                    <br>
+                                    The User hereby acknowledges and consents to Game's processing of the User's
+                                    personal data for the purposes of allowing the User access and use of the Website
+                                    and in order to allow the User to participate in Games and to provide ancillary
+                                    services to the User.
+                                    <br>
+                                    7.2.
+                                    <br>
+                                    Game will protect the User's personal information and respect the User's privacy
+                                    in accordance with best business practices and applicable laws.
+                                    <br>
+                                    7.3.
+                                    <br>
+                                    Game will only use the User's personal data to allow the User to participate in
+                                    the Games and to carry out operations relevant to the User's participation in the
+                                    Games.
+                                    <br>
+                                    7.4.
+                                    <br>
+                                    Game shall also process the User's personal data for the purposes of carrying out
+                                    verification procedures in relation to the User's participation in the Games.
+                                    <br>
+                                    7.5.
+                                    <br>
+                                    The User's personal data will not be disclosed to third parties, unless such
+                                    disclosure is necessary for processing of the User's requests, such as effecting
+                                    transactions on the User's Member Account or participating in Games, to carry
+                                    verification procedures or unless it is required by law. As Game's business
+                                    partners or suppliers or service providers may be responsible for certain parts of
+                                    the overall functioning or operation of the Website, personal data may be disclosed
+                                    to them. The User hereby consents to all such disclosures.
+                                    <br>
+                                    7.6.
+                                    <br>
+                                    The User has the right to access personal data held by Game about him.
+                                    <br>
+                                    7.7.
+                                    <br>
+                                    The User must promptly inform Game, by amending the User's profile or otherwise,
+                                    of any changes to information provided by the User at the time of registration and
+                                    opening of the User's Member Account.
+                                    <br>
+                                    7.8.
+                                    <br>
+                                    In order to provide the User with an efficient service, Game and/or its service
+                                    providers may require the transfer of the User's personal data from one country to
+                                    another on a world-wide basis. The User hereby consents to the User's personal data
+                                    so transferred.
+                                    <br>
+                                    7.9.
+                                    <br>
+                                    In the processing of the User's Member Account and associated transactions, Game
+                                    may have recourse to credit rating agencies, fraud detection agencies, anti-money
+                                    laundering agencies who may keep a record of the User's information. The User hereby
+                                    consents to such disclosures.
+                                    <br>
+                                    7.10.
+                                    <br>
+                                    In order to make the User's visit to the Websites more user-friendly, to keep track
+                                    of visits to the Websites and to improve the service, Game collects a small piece
+                                    of information sent from the User's browser, called a cookie. The User can, if he
+                                    wishes, turn off the collection of cookies (please refer to the User’s browser
+                                    instructions as to how to do this). The User must note, however, that turning off
+                                    cookies may restrict the User's use of the Websites or his overall experience.
+                                    <br>
+                                    7.11.
+                                    <br>
+                                    The User consents to Game's informing the User from time to time about changes on
+                                    the Website, new services and promotions. If the User does not wish to receive
+                                    direct marketing data the User may opt out of such service. The User can opt in
+                                    again into receiving promotional material by emailing our support department.
+                                    <br>
+                                    <br>
+                                    <span>8. Complaints</span>
+                                    <br>
+                                    <br>
+                                    8.1.
+                                    <br>
+                                    User complaints can be made to:
+                                    <br>
+                                    8.1.1.
+                                    <br>
+                                    Game via email at support@Game.com
+                                    <br>
+                                    8.1.2.
+                                    <br>
+                                    Customer support on support@Game.com
+                                    <br>
+                                    8.1.3.
+                                    <br>
+                                    Game will use best efforts to resolve a reported matter promptly.
+                                    <br>
+                                    8.1.4.
+                                    <br>
+                                    If the User has a query with regard to any transaction, the User may also contact
+                                    Game at support@Game.com with details of the query. Representatives of Game
+                                    will review any queried or disputed transactions. Decisions taken by Game are
+                                    final and binding.
+                                    <br>
+                                    <br>
+                                    <span>9. Limitation of liability</span>
+                                    <br>
+                                    <br>
+                                    9.1.
+                                    <br>
+                                    The User enters the Website and participates in the Games at his own risk. The
+                                    Websites and the Games are provided without any warranty whatsoever, whether express
+                                    or implied.
+                                    <br>
+                                    9.2.
+                                    <br>
+                                    Without prejudice to the generality of the preceding provision, Game, its
+                                    directors, employees, partners, service providers:
+                                    <br>
+                                    9.2.1.
+                                    <br>
+                                    do not warrant that the software or the Website is/are fit for their purpose;
+                                    <br>
+                                    9.2.2.
+                                    <br>
+                                    do not warrant that the software and Website are free from errors;
+                                    <br>
+                                    9.2.3.
+                                    <br>
+                                    do not warrant that the Websites and/or Games will be accessible without
+                                    interruptions;
+                                    <br>
+                                    9.2.4.
+                                    <br>
+                                    shall not be liable for any loss, costs, expenses or damages, whether direct,
+                                    indirect, special, consequential, incidental or otherwise, arising in relation to
+                                    the User's use of the Websites or the User's participation in the Games.
+                                    <br>
+                                    9.2.5.
+                                    <br>
+                                    The User hereby agrees to fully indemnify and hold harmless Game, its directors,
+                                    employees, partners, and service providers for any cost, expense, loss, damages,
+                                    claims and liabilities howsoever caused that may arise in relation to the User's use
+                                    of the Website or participation in the Games.
+                                    <br>
+                                    <br>
+                                    <span>10. Anti-money laundering reporting</span>
+                                    <br>
+                                    <br>
+                                    10.1.
+                                    <br>
+                                    If the User becomes aware of any suspicious activity relating to any of the Games of
+                                    the Website, the User must report this to Game immediately.
+                                    <br>
+                                    10.2.
+                                    <br>
+                                    Game may suspend, block or close the User's Member Account and withhold funds if
+                                    suspicions of money laundering occur in accordance with the Prevention of Money
+                                    Laundering Act.
+                                    <br>
+                                    10.3.
+                                    <br>
+                                    Any suspicion of money laundering taking place through the Website shall be reported
+                                    to the authorities for further investigation. Any funds due to the player may be
+                                    confiscated by the company or transferred to the authorities.
+                                    <br>
+                                    <br>
+                                    <span>11. Breaches, penalties and termination</span>
+                                    <br>
+                                    <br>
+                                    11.1.
+                                    <br>
+                                    If the User breach any provision of these T&C or Game has a reasonable ground to
+                                    suspect that the User has breached them, Game reserves the right, to suspend,
+                                    close the Member Account, withhold any money in the User's account (including the
+                                    deposit) and apply such funds on account of any damages due by the User.
+                                    <br>
+                                    11.2.
+                                    <br>
+                                    If Game suspects that the User is engaged in illegal or fraudulent activities
+                                    when using the Website; or in breach of this Agreement; or that the User has
+                                    problems with creditors or otherwise there exists a situation which is detrimental
+                                    to our business, Game may freeze or terminate the User's account or cancel any
+                                    stakes at Game's absolute discretion.
+                                    <br>
+                                    11.3.
+                                    <br>
+                                    The User acknowledges that Game shall be the final decision-maker of whether the
+                                    User has violated Game's rules or terms or conditions. This may result in
+                                    Game's suspension or permanent barring of the User from participation in our
+                                    site.
+                                    <br>
+                                    <br>
+                                    <span>12. Intellectual property</span>
+                                    <br>
+                                    <br>
+                                    12.1.
+                                    <br>
+                                    Game is the sole owner of the trademark Game and the Game logo. Any
+                                    unauthorised use of the Game trademark and the Game logo may result in
+                                    prosecution.
+                                    <br>
+                                    12.2.
+                                    <br>
+                                    https://www.9dgs.com is the URL of Game and no unauthorized use may be made of
+                                    this URL on another website or digital platform without our prior written consent.
+                                    <br>
+                                    12.3.
+                                    <br>
+                                    Game is the owner or the rightful licensee of the rights to the technology,
+                                    software and business systems used within this Website.
+                                    <br>
+                                    12.4.
+                                    <br>
+                                    The contents and structure of Game's Website pages are subject to copyright © and
+                                    database right in the name of Game. All rights reserved. The copyright in this
+                                    Website including all text, graphics, code, files and links belongs to Game and
+                                    the site may not be reproduced, transmitted or stored in whole or in part without
+                                    Game's written consent. The User's registration and use of Game's system
+                                    therefore does not confer any rights whatsoever to the intellectual property
+                                    contained in our system.
+                                    <br>
+                                    12.5.
+                                    <br>
+                                    Links to the Website and any of the pages therein may not be included in any other
+                                    website without the prior written consent of Game.
+                                    <br>
+                                    12.6.
+                                    <br>
+                                    The User agrees not to use any automatic or manual device to monitor Game web
+                                    pages or any content therein. Any unauthorized use or reproduction may be
+                                    prosecuted.
+                                    <br>
+                                    <br>
+                                    <span>13. Severability</span>
+                                    <br>
+                                    <br>
+                                    13.1
+                                    <br>
+                                    If any provision of these T&C is held to be illegal or unenforceable, such provision
+                                    shall be severed from these T&C and all other provisions shall remain in force
+                                    unaffected by such severance.
+                                    <br>
+                                    <br>
+                                    <span>14. Assignment</span>
+                                    <br>
+                                    <br>
+                                    14.1
+                                    <br>
+                                    Game reserve the right to assign or otherwise lawfully transfer this Agreement.
+                                    The User shall not assign or otherwise transfer this Agreement.
+                                    <br>
+                                    <br>
+                                    <span>15. Entire Agreement and Admissibility</span>
+                                    <br>
+                                    <br>
+                                    15.1.
+                                    <br>
+                                    This Agreement constitutes the entire agreement between the User and Game with
+                                    respect to the Website and save in the case of fraud it supersedes all prior or
+                                    contemporaneous communications and proposals, whether electronic, oral or written,
+                                    between the User and Game with respect to this Website.
+                                    <br>
+                                    15.2.
+                                    <br>
+                                    A printed version of this agreement and of any notice given in electronic form shall
+                                    be admissible in judicial or administrative proceedings based upon or relating to
+                                    this agreement to the same extent and subject to the same conditions as other
+                                    business documents and records originally generated and maintained in printed form.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-main"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-item footer-padding">
+                        <div class="footer-head-title">Partner</div>
+                        <div class="footer-logo-box">
+                            <div class="AE_GAMING"></div>
+                            <div class="CARD365"></div>
+                            <div class="CQ9"></div>
+                            <div class="DG"></div>
+                            <div class="FC"></div>
+                            <div class="JDB"></div>
+                            <div class="JILI"></div>
+                            <div class="KINGMAKER"></div>
+                            <div class="PP"></div>
+                            <div class="SEXYBCRT"></div>
+                            <div class="SKM"></div>
+                            <div class="UGAMING"></div>
+                            <div class="VENUS"></div>
+                            <div class="WM"></div>
+                            <div class="YL"></div>
+                        </div>
+                    </div>
+
+                    <div class="footer-item">
+                        <div class="footer-head-title">About Us</div>
+                        <div class="footer-aboutus">
+                            <ul>
+                                <li>
+                                    <a href="about.html">About</a>
+                                </li>
+                                <li>
+                                    <a href="useragreement.html">User Agreement</a>
+                                </li>
+                                <li>
+                                    <a href="responsiblegaming.html">Responsible Gaming</a>
+                                </li>
+                                <li>
+                                    <a href="termandconditions.html">Terms and Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="policy.html">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer-item">
+                        <div class="footer-head-title">Help & Support</div>
+                        <div class="footer-aboutus">
+                            <ul>
+                                <li>
+                                    <a href="deposite.html">Deposits</a>
+                                </li>
+                                <li>
+                                    <a href="withdrawals.html">Withdrawals</a>
+                                </li>
+                                <li>
+                                    <a href="faqs.html">FAQs</a>
+                                </li>
+                                <li>
+                                    <a href="contactus.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-copyright">
+                        <p>Copyright © Game Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/vendor/jquery/dist/jquery.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

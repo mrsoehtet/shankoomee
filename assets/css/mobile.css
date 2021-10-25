@@ -1,0 +1,111 @@
+.mobile-banner {
+    background: #5801d8 url('background/mobilePage/bannerbg.jpg') 50%/cover no-repeat;
+    height: calc(100vh - 359px);
+    min-height: 680px;
+}
+/* ---------------------Left Side CSS------------------------ */
+.qr-block {
+    background-color: rgba(17,17,17,.6);
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+    height: 340px;
+    line-height: 1.5;
+    margin-left: 80px;
+    padding: 20px 70px;
+    position: relative;
+    text-align: center;
+    width: 450px;
+}
+.qr-block::after {
+    background: url(https://csi.20icipp.com/img/static/qr/qr-m-f.png) 50%/cover no-repeat;
+    content: "";
+    height: 788px;
+    left: -200px;
+    position: absolute;
+    top: -180px;
+    transform: scale(.9);
+    width: 852px;
+}
+.qr-block h2 {
+    font-size: 24px;
+    font-weight: 700;
+    height: 1.5;
+    padding-top: 20px;
+    white-space: nowrap;
+}
+.qr-block .des {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.qr-block .qrcode {
+    font-size: 15px;
+    padding-top: 8px;
+}
+.qr-block .qrcode {
+    font-size: 15px;
+    padding-top: 8px;
+}
+.qr-block .qrcode .qr-item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.qr-block .qrcode > div {
+    font-size: 13px;
+    text-align: center;
+}
+.qr-item div {
+    background-image: url('background/mobilePage/qr.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+
+
+/* ---------------------Right Side CSS------------------------ */
+.mobile-side {
+    height: 783px;
+    transform: translateY(-50%) scale(.9);
+    width: 745px;
+}
+
+.mobile-side::before {
+    background: url('background/mobilePage/right-bg1.png') 50%/cover no-repeat;
+    content: "";
+    height: 100%;
+    position: absolute;
+    transition: .4s ease;
+    width: 100%;
+    right: 0;
+    top: 50%;
+}
+
+.mobile-side:hover::before {
+    transform: scale(1.2);
+}
+
+.mobile-screen {
+    height: 522px;
+    left: 215px;
+    position: absolute;
+    top: 502px;
+    width: 270px;
+    z-index: 1;
+}
+
+.mobile-side::after {
+    background: url('background/mobilePage/right-bg2.png') 50%/cover no-repeat;
+    content: "";
+    height: 100%;
+    position: absolute;
+    transition: .4s ease;
+    width: 100%;
+    top: 50%;
+}
+
+.mobile-screen img {}

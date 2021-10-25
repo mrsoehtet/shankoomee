@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ----------bootstrap version 4.6.0 ------------ -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Droid+Sans' type='text/css'>
+</head>
+
+<body>
+
+    <!-- ---------------Header Section---------------- -->
+    <header class="container-fluid header-container">
+        <div class="row">
+            <div class="col-12 p-0">
+                <!-- login place here -->
+                <div class="quick-nav">
+                    <div class="main-wrap main-header">
+                        <div class="header-btn">
+                            <button class="btn-big" data-toggle="modal" data-target="#loginModal">Login</button>
+                            <!-- login modal -->
+                            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header login-header">
+                                            <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="form-group login-input mb-4">
+                                                <input type="text" class="form-control" placeholder="Player ID">
+                                            </div>
+                                            <div class="form-group login-input mb-4">
+                                                <input type="password" class="form-control" placeholder="Password">
+                                            </div>
+                                            <div class="form-group login-input mb-2">
+                                                <div class="login-button-container">
+                                                    <button type="submit" class="login-button login">Login</button>
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <p class="mb-0 text-dark">
+                                                    Yet to register??
+                                                    <a href="register.html" class="register-joinnow">Join Now</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="register.html" class="btn-big signup text-decoration-none">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo/logo-main.png" alt="Logo" class="logo-size">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars toggler-bar"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Chess
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <ul class="dropdown-category">
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/chess/1.png" alt="banner-skm">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/chess/2.png" alt="banner-skm">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/chess/3.png" alt="banner-skm">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    E-Games
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <ul class="dropdown-category">
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/egame/1.png"
+                                                    alt="banner-egame">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/egame/2.png"
+                                                    alt="banner-egame">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/egame/3.png"
+                                                    alt="banner-egame">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Fising
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <ul class="dropdown-category">
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/fishing/1.png"
+                                                    alt="banner-fishing">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/fishing/2.png"
+                                                    alt="banner-fishing">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/fishing/3.png"
+                                                    alt="banner-fishing">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Sports
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <ul class="dropdown-category">
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/sport/1.png"
+                                                    alt="banenr-sport">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Live
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <ul class="dropdown-category">
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/live/1.png"
+                                                    alt="banenr-sport">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/live/2.png"
+                                                    alt="banenr-sport">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/NavDropdown-Image/live/3.png"
+                                                    alt="banenr-sport">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="promotion.html">
+                                    Promotion
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mobile.html">
+                                    Mobile
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- ---------------Page Section---------------- -->
+    <section class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card rounded-0">
+                    <div class="card-body p-5">
+                        <div class="general-layout">
+                            <h1>FAQs</h1>
+                            <div class="cont">
+                                <p>
+                                    <span>Q1: What is the strengths of Game? </span>
+                                    <br>
+                                    <br>
+                                    -> Game is proud to be the first prestige online gaming website in Asian market.
+                                    Our company provides a lot of interesting gaming products such as Sports, Live
+                                    casino, slot games, etc, especially online horse racing and online cock-fighting.
+                                    Game guarantees that all deposit and withdrawal transactions of our players are
+                                    always processed promtly. Moreover, players are supported by our 24/7 professional
+                                    customer service.
+                                    <br>
+                                    <br>
+                                    <span>Q2: Is it safe to join in Game website?</span>
+                                    <br>
+                                    <br>
+                                    -> All information of our players are secured absolutely by our system in abroad. In
+                                    addition, we also request our banks, transfer agents, credit card institution and
+                                    our partners to secure our players' information for their transactions. All their
+                                    deposits are considered as commercial accounts and are not transferred to others.
+                                    <br>
+                                    <br>
+                                    <span>Q3: What is legal age limit to join in Game? </span>
+                                    <br>
+                                    <br>
+                                    -> Legal age limit to join in Game is over the age of 18.
+                                    <br>
+                                    <br>
+                                    <span>Q4: Is it compulsory to register with real name at Game? </span>
+                                    <br>
+                                    <br>
+                                    -> For security reason, players are required to register account with their names
+                                    that is matched with their bank account name. Hence, all deposit and withdrawal
+                                    transactions must be submitted with their correct names.
+                                    <br>
+                                    <br>
+                                    <span>Q5: What should I do if I forget password of Game account? </span>
+                                    <br>
+                                    <br>
+                                    -> Please enter Game website, then click on "forget password", fill in full of
+                                    correct information: user and registered email, then click "OK". Our system will
+                                    sent your email a temporary password to sign in. After sign in successfully, you may
+                                    change your password and use the newest password to sign in next times.
+                                    <br>
+                                    <br>
+                                    <span>Q6: Is online gaming legal? </span>
+                                    <br>
+                                    <br>
+                                    -> In some countries or regions, it is agaisnt the laws to play online gaming. In
+                                    this case, you are required to be in compliance with your local laws. Should you
+                                    have any queries, kindly consult with law advisors in your place of residence for
+                                    more information. Our company shall not take liabilities for those who violate their
+                                    local laws.
+                                    <br>
+                                    <br>
+                                    <span>Q7: May I use credit card of which owner's name is not my name? </span>
+                                    <br>
+                                    <br>
+                                    -> You are advised to use your own credit card to make a deposit.
+                                    <br>
+                                    <br>
+                                    <span>Q8: Do I pay service charge when I make a deposit or withdrawal? </span>
+                                    <br>
+                                    <br>
+                                    -> You may pay a small charge of service, depending on which method you choose. For
+                                    this charge, kindly contact your banks for more information. There is free of charge
+                                    processing from your accounts at Game, whereas there is some charges of service
+                                    processing by some banks, credit card institutions or electronic wallets you choose.
+                                    You may check table of service charge at banks where you make a deposit or
+                                    withdrawal. Game does not receive any charges from your transactions.
+                                    <br>
+                                    <br>
+                                    <span>Q9: What documents are requested to make a withdrawal at Game? </span>
+                                    <br>
+                                    <br>
+                                    Withrawal via local banks
+                                    <br>
+                                    In order to make a withdrawal quickly at Game via local banks, players must
+                                    provide us with their enclosed documents as below
+                                    <br>
+                                    - A copy of their ID card with clear photo.
+                                    <br>
+                                    - A copy of their bank account number.
+                                    <br>
+                                    - A copy of debit/credit card ( including front side and back side)
+                                    <br>
+                                    First time withdrawal.
+                                    <br>
+                                    For the first time withdrawal, in order to ensure safety in accordance with
+                                    withdrawal privacy policy of Game, players are requested to provide our company
+                                    with some neccessary information. After that, the players are required to wait for
+                                    our confirmation with our financial department for 3 office working days.
+                                    <br>
+                                    All above documents must be sent to our email at banking@Game.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-main"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-item footer-padding">
+                        <div class="footer-head-title">Partner</div>
+                        <div class="footer-logo-box">
+                            <div class="AE_GAMING"></div>
+                            <div class="CARD365"></div>
+                            <div class="CQ9"></div>
+                            <div class="DG"></div>
+                            <div class="FC"></div>
+                            <div class="JDB"></div>
+                            <div class="JILI"></div>
+                            <div class="KINGMAKER"></div>
+                            <div class="PP"></div>
+                            <div class="SEXYBCRT"></div>
+                            <div class="SKM"></div>
+                            <div class="UGAMING"></div>
+                            <div class="VENUS"></div>
+                            <div class="WM"></div>
+                            <div class="YL"></div>
+                        </div>
+                    </div>
+
+                    <div class="footer-item">
+                        <div class="footer-head-title">About Us</div>
+                        <div class="footer-aboutus">
+                            <ul>
+                                <li>
+                                    <a href="about.html">About</a>
+                                </li>
+                                <li>
+                                    <a href="useragreement.html">User Agreement</a>
+                                </li>
+                                <li>
+                                    <a href="responsiblegaming.html">Responsible Gaming</a>
+                                </li>
+                                <li>
+                                    <a href="termandconditions.html">Terms and Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="policy.html">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer-item">
+                        <div class="footer-head-title">Help & Support</div>
+                        <div class="footer-aboutus">
+                            <ul>
+                                <li>
+                                    <a href="deposite.html">Deposits</a>
+                                </li>
+                                <li>
+                                    <a href="withdrawals.html">Withdrawals</a>
+                                </li>
+                                <li>
+                                    <a href="faqs.html">FAQs</a>
+                                </li>
+                                <li>
+                                    <a href="contactus.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-copyright">
+                        <p>Copyright © Game Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/vendor/jquery/dist/jquery.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

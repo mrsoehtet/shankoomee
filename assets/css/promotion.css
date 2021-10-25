@@ -1,0 +1,28 @@
+.promotion {
+    background: #0e0f12 url('background/promotionPage/1.jpg') top/100% auto no-repeat;
+    min-height: calc(100vh - 375px);
+    padding: 40px 0;
+}
+
+.promotion .category {
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+.promotion .category .category-item.active, .promotion .category .category-item:hover {
+    background-color: var(--main-color);
+    cursor: pointer;
+    opacity: 1;
+}
+.promotion .category .category-item {
+    padding: 0 15px;
+    color: #fff;
+    font-size: 16px;
+    height: 54px;
+    line-height: 54px;
+    margin-right: 5px;
+    margin-top: 15px;
+    min-width: 135px;
+    text-align: center;
+}

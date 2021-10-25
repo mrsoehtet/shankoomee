@@ -1,0 +1,134 @@
+.header h3 {
+    color: var(--main-color);
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+.form-data label {
+    color: rgb(97, 97, 97);
+}
+.form-data label span {
+    color: var(--main-color);
+}
+.form-data input {
+    font-size: 15px;
+}
+.form-data input:focus {
+    box-shadow: none;
+    border-color: var(--main-color);
+}
+.form-data .form-group {
+    margin-bottom: 25px;
+}
+
+
+/* -----------------------accept term and condition checkbox ui ---------------------- */
+.cbx {
+    margin: auto;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.cbx span {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translate3d(0, 0, 0);
+}
+
+.cbx span:first-child {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    transform: scale(1);
+    vertical-align: middle;
+    border: 1px solid #9098A9;
+    transition: all 0.2s ease;
+}
+
+.cbx span:first-child svg {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    transform: translate3d(0, 0, 0);
+}
+
+.cbx span:first-child:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #A18246;
+    display: block;
+    transform: scale(0);
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.cbx span:last-child {
+    padding-left: 8px;
+}
+
+.cbx:hover span:first-child {
+    border-color: #A18246;
+}
+
+.inp-cbx:checked+.cbx span:first-child {
+    background: #A18246;
+    border-color: #A18246;
+    animation: wave 0.4s ease;
+}
+
+.inp-cbx:checked+.cbx span:first-child svg {
+    stroke-dashoffset: 0;
+}
+
+.inp-cbx:checked+.cbx span:first-child:before {
+    transform: scale(3.5);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+@keyframes wave {
+    50% {
+        transform: scale(0.9);
+    }
+}
+.accept-policy-text {
+    font-size: 14px;
+}
+
+.register-buttons-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register-buttons-group .register-button {
+    padding: 13px 40px;
+    border-radius: 20px;
+    border: none;
+    margin: 0 7px;
+    color: rgb(228, 228, 228);
+    transition: 0.5s;
+}
+.register-button.reset{
+    background-color: rgb(138, 138, 138);
+}
+.register-button.reset:hover {
+    background-color: rgb(100, 100, 100);
+}
+.register-button.joinnow{
+    background-color: var(--main-color);
+}
+.register-button.joinnow:hover {
+    background-color: #775d2a;
+}
