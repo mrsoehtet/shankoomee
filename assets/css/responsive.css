@@ -11,7 +11,7 @@
     .services-card {
         height: 350px;
     }
-    .mobile-side::before{
+    .mobile-side::before {
         right: 140px;
     }
 }
@@ -306,7 +306,7 @@
 /* Smartphones Mobiles (landscape)
 ----------------------------------------------------------------------------- */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 413px) and (max-width: 480px) {
     /* -------------------------------home page -----------------------------------*/
     body {
         overflow-x: hidden;
@@ -390,7 +390,105 @@
     }
     .mobile-screen {
         left: 110px;
-        top: 256px;
+        top: 257px;
+        width: 142px;
+        height: auto;
+    }
+    .qr-block {
+        margin-left: 0;
+        width: auto;
+        padding: 20px 35px;
+    }
+    .qr-block::after {
+        width: 650px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 412px) {
+    /* -------------------------------home page -----------------------------------*/
+    body {
+        overflow-x: hidden;
+    }
+    .quick-nav {
+        z-index: 0;
+    }
+    .banner-container-padding {
+        padding: 0;
+    }
+    .main-wrap {
+        margin: auto;
+        max-width: auto;
+        min-width: auto;
+        width: 100%;
+    }
+    .navbar {
+        padding: 0;
+        margin-bottom: 15px;
+    }
+    .logo-size {
+        width: 70px;
+        margin-top: -50px;
+    }
+    .toggler-bar {
+        color: #FFF;
+        font-size: 30px;
+    }
+    .dropdown-category {
+        height: 150px;
+        flex-wrap: wrap;
+    }
+    .dropdown-menu {
+        padding: 0 !important;
+    }
+    .current {
+        border-color: transparent !important;
+    }
+    .services-image {
+        margin-top: 0;
+        height: 250px;
+    }
+    .services-card {
+        height: 250px;
+        margin-bottom: 30px;
+    }
+    .services-card h2 {
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .services-card h2::after {
+        height: 30px;
+        width: 30px;
+        line-height: 40px;
+    }
+    /*---------------------------- Footer css---------------------------- */
+    .footer-aboutus ul {
+        flex-wrap: wrap;
+    }
+    .footer-head-title {
+        width: 150px;
+    }
+    .footer-aboutus ul li a {
+        padding: 0 10px;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+    .general-layout h1 {
+        font-size: 1.7rem;
+    }
+    /*---------------------------- Mobile Page css -----------------------*/
+    .mobile-banner {
+        min-height: 820px;
+    }
+    .mobile-col {
+        flex-direction: column-reverse;
+    }
+    .mobile-side {
+        width: auto;
+        height: 400px;
+    }
+    .mobile-screen {
+        left: 90px;
+        top: 257px;
         width: 142px;
         height: auto;
     }
